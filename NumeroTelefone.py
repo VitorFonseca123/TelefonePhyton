@@ -1,4 +1,4 @@
-def isPhoneNumber(text):    
+def isPhoneNumber(text):
     if len(text) != 9:
         return False
     for i in range(0, 4):
@@ -10,6 +10,8 @@ def isPhoneNumber(text):
         if not text[i].isdecimal():
             return False
     return True
+
+
 def isCellNumber(text):
     if len(text) != 10:
         return False
@@ -22,16 +24,17 @@ def isCellNumber(text):
         if not text[i].isdecimal():
             return False
     return True
+
+
 def cellORphone(number):
     print(number[0])
-    if number[0]!=9:
+    if number[0] != '9':
         print(number, ' é um número de telefone:')
-        print(isPhoneNumber(number))   
-    elif number[0] == 9:
+        print(isPhoneNumber(number))
+    elif number[0] == '9':
         print(number, ' é um número de celular:')
         print(isCellNumber(number))
+
+
 number = input('Digite o número de telefone: ')
 cellORphone(number)
-
-# 2749-8937
-#98143-3618
