@@ -33,5 +33,4 @@ def cellORphone(number):
 number = input('Digite o número de telefone: ')
 cellORphone(number)
 
-# 2749-8937
-#98143-3618
+
